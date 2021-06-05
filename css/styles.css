@@ -10,6 +10,7 @@
   --border-color: rgba(238, 238, 238, 1);
   --bg-hero-color: rgba(196, 196, 196, 1);
   --bg-hero-gradient: rgba(47, 48, 58, 0.4);
+  --icon-color: rgba(175, 177, 184, 1);
   --card-set-gap: 30px;
 }
 /* цвет основного текста rgba(117, 117, 117, 1) */
@@ -186,6 +187,9 @@ p {
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .prime-button {
@@ -202,6 +206,12 @@ p {
   line-height: 1.6;
   letter-spacing: 0.03em;
   border: none;
+}
+.prime-button:hover,
+.prime-button:focus{
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* КОНТАКТИ */
@@ -364,7 +374,7 @@ html {
   margin-right: var(--card-set-gap);
 }
 .profession {
-  margin-bottom: var(--card-set-gap);
+  margin-bottom: 16px;
 }
 /* СЕКЦИИ */
 .section {
@@ -412,6 +422,13 @@ html {
 .type-box-item {
   flex-basis: calc((100% - 60px) / 3);
 }
+
+.type-box-item:hover,
+.type-box-item:focus {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .type-box-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -447,29 +464,6 @@ html {
 
 /* СТИЛИЗАЦИЯ ИЗОБРАЖЕНИЙ И ИКОНОК */
 
-.feature::before { 
-  display: block;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: var(--team-color);
-  content: "";
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-.attention::before {
-  background-image: url(../imagen/icon/antenna1.svg);
-}
-.punctual::before {
-  background-image: url(../imagen/icon/clock1.svg);
-}
-.plan::before {
-  background-image: url(../imagen/icon/diagram1.svg);
-}
-.tech::before {
-  background-image: url(../imagen/icon/astronaut1.svg);
-}
 /* ИКОНКИ КОНТАКТОВ ХЕДЕРА */
  .mail-icon {
   width: 16px;
@@ -483,8 +477,93 @@ html {
   margin-right: 10px;
   fill: currentColor;
 }
+/* ИКОНКИ СЕКЦИИ ПРЕИМУЩЕСТВА */
+.feature-icon {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--team-color);
+  content: "";
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 
 /* ИКОНКИ КАРТОЧЕК */
-.social-icon {
- 
+.team-icon{
+display: flex;
+justify-content: center;
+padding-bottom: var(--card-set-gap); 
+}
+.team-icon-item {
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+   width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  stroke: var(--icon-color);
+}
+.team-link{
+  min-width: 100%;
+  display: inline-block;
+  fill: var(--icon-color);
+  
+}
+.team-link:hover,
+.team-link:focus {
+  border-radius: 50%;
+  fill: var(--white-color);
+  stroke: var(--white-color);
+
+}
+.team-icon-item:hover,
+.team-icon-item:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+/*  ПОСТОЯННЫЕ КЛИЕНТЫ */
+.client-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: var(--icon-color);
+  
+}
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.clients {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 0;
+}
+/* ИКОНКИ ФУТЕРА */
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.ft-box {
+  display: flex;
+  margin-left: 70px;
+}
+
+.conect { 
+  color: var(--white-color);
 }
