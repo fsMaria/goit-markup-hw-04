@@ -83,7 +83,7 @@ p {
 
 /* ГЕРОЙ */
 .hero {
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   background-color: var(--bg-hero-gradient);
   background-image: linear-gradient(to right, rgba(47, 58, 57, 0.4), rgba(47, 48, 58, 0.4)), url(../imagen/imghero.jpg);
@@ -91,7 +91,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-
+  margin: auto;
 }
 .hero-title {
   margin-top: 0;
@@ -312,7 +312,6 @@ html {
 }
 .contacts {
   display: flex;
-  margin-left: auto;
 }
 .contacts .item:not(:last-child) {
   margin-right: 50px;
@@ -320,6 +319,11 @@ html {
 .navigation {
   display: flex;
   align-items: center;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* КОНТЕНТ */
@@ -499,20 +503,18 @@ display: flex;
 justify-content: center;
 padding-bottom: var(--card-set-gap); 
 }
-.team-icon-item {
+
+.team-link{
+  max-width: 100%;
+  display: inline-block;
+  fill: var(--icon-color);
   display: flex;
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  stroke: var(--icon-color);
-}
-.team-link{
-  min-width: 100%;
-  display: inline-block;
-  fill: var(--icon-color);
+  
 }
 .team-link:hover,
 .team-link:focus {
@@ -566,23 +568,26 @@ margin-bottom: 0;
   color: var(--white-color);
 }
 
- 
 .ft-link
-{
-  min-width: 100%;
+{ max-width: 100%;
   display: inline-block;
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  stroke: var(--white-color);
 }
 .ft-link:hover,
 .ft-link:focus {
   background-color: var(--accent-color);
+}
+.ft-icon-item {
+  display: flex;
+  justify-content: center;
+}
+.ft-link:not(:last-child) {
+  margin-right: 10px;
 }
