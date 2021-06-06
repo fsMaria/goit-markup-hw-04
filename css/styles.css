@@ -504,7 +504,7 @@ padding-bottom: var(--card-set-gap);
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-   width: 44px;
+  width: 44px;
   height: 44px;
   border-radius: 50%;
   stroke: var(--icon-color);
@@ -513,7 +513,6 @@ padding-bottom: var(--card-set-gap);
   min-width: 100%;
   display: inline-block;
   fill: var(--icon-color);
-  
 }
 .team-link:hover,
 .team-link:focus {
@@ -563,7 +562,27 @@ margin-bottom: 0;
   display: flex;
   margin-left: 70px;
 }
-
 .conect { 
   color: var(--white-color);
+}
+
+ 
+.ft-link
+{
+  min-width: 100%;
+  display: inline-block;
+  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  stroke: var(--white-color);
+}
+.ft-link:hover,
+.ft-link:focus {
+  background-color: var(--accent-color);
 }
