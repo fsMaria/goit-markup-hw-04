@@ -431,11 +431,14 @@ html {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.type-box-item:hover,
-.type-box-item:focus {
+.type-box-item a:hover,
+.type-box-item a:focus {
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.type-link {
+  display: block;
 }
 
 .type-box-item:not(:nth-child(3n)) {
