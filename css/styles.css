@@ -573,6 +573,8 @@ margin-bottom: 0;
 }
 .conect { 
   color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .ft-link { 
