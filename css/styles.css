@@ -41,6 +41,12 @@ p {
   display: inline-block;
   margin: 0;
 }
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
 /*  ЛОГОТИП */
 .logo {
   margin-right: 93px;
@@ -81,7 +87,7 @@ p {
 .site-nav a:active {
   color: var(--accent-color);
 }
-.highlighted:visited {
+.site-nav .item .highlighted {
   color: var(--accent-color);
 }
 
@@ -96,6 +102,8 @@ p {
   background-position: center;
   background-size: auto;
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -289,11 +297,7 @@ html {
   padding-right: 15px;
   margin: 0 auto;
 }
-/* ГЕРОЙ */
-.hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+
 /* СКРЫТЫЕ СЕКЦИИ */
 .hidden-section {
   position: absolute;
@@ -572,9 +576,14 @@ margin-bottom: 0;
   margin-left: 70px;
 }
 .conect { 
+  display: inline-block;
   color: var(--white-color);
   font-weight: 700;
   font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.173;
+  width: 145px;
+  height: 16px;
 }
 
 .ft-link { 
