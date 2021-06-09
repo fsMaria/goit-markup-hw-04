@@ -576,12 +576,11 @@ margin-bottom: 0;
 }
 .conect { 
   color: var(--white-color);
+  text-transform:  uppercase;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.173;
-  width: 145px;
-  height: 16px;
 }
 
 .ft-link { 
